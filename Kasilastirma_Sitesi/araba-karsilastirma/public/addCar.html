@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Araba Ekle</title>
+  <link rel="stylesheet" type="text/css" href="cars.css">
+  
+</head>
+<body>
+  <h1>Araba Ekle</h1>
+  <form id="addCarForm" action="http://localhost:3000/addCar" method="POST">
+    <label for="carBrand">Marka:</label>
+    <input type="text" id="carBrand" required>
+    <label for="carModel">Model:</label>
+    <input type="text" id="carModel" required>
+    <label for="carYear">Üretim Yılı:</label>
+    <input type="number" id="carYear" required>
+    <label for="carPrice">Fiyat:</label>
+    <input type="number" id="carPrice" required>
+    <label for="carEngineCapacity">Motor Hacmi:</label>
+    <input type="number" id="carEngineCapacity" required>
+    <label for="carHorsepower">Beygir Gücü:</label>
+    <input type="number" id="carHorsepower" required>
+    <label for="carTorque">Tork:</label>
+    <input type="number" id="carTorque" required>
+    <label for="carFuelType">Yakıt Tipi:</label>
+    <input type="text" id="carFuelType" required>
+    <label for="carTransmissionType">Vites Tipi:</label>
+    <input type="text" id="carTransmissionType" required>
+    <label for="carWeight">Ağırlık:</label>
+    <input type="number" id="carWeight" required>
+    <button type="button" onclick="addCar()">Araba Ekle</button>
+    <button type="button" onclick="redirectToCompareCars()">Karşılaştır</button>
+  </form>
+  
+  <script src="addCar.js"></script>
+
+</body>
+</html>

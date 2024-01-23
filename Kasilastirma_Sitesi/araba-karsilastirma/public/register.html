@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Kayıt Ol</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Kayıt Ol</h1>
+    <form id="registerForm">
+        <label for="registerUsername">Kullanıcı Adı:</label>
+        <input type="text" id="registerUsername" required>
+        <label for="registerEmail">Email:</label>
+        <input type="email" id="registerEmail" required>
+        <label for="registerPassword">Şifre:</label>
+        <input type="password" id="registerPassword" required>
+        <button type="button" onclick="register()">Kayıt Ol</button>
+      </form>
+      
+    <p>Zaten bir hesabınız varsa <a href="login.html">giriş yapın</a>.</p>
+  </div>
+  <div id="result"></div>
+ 
+  <script src="register.js"></script>
+</body>
+</html>
